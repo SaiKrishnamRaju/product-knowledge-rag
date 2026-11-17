@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: product-knowledge-rag
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile.onnx
+    healthCheckPath: /ready
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: DATABASE_URL
+        sync: false
+      - key: ENABLE_LIVE_GENERATION
+        value: "false"

@@ -1,0 +1,13 @@
+product_model	page	question	expected_answer	evidence_anchor
+Pico	4	How many GPIO pins does the Raspberry Pi Pico expose?	26	Exposes 26
+Pico	4	Which chip is the original Raspberry Pi Pico based on?	RP2040	RP2040 microcontroller chip
+Pico	4	How much flash does the original Raspberry Pi Pico have?	2 MB	2 MB Flash
+Pico W	4	What version of Bluetooth does the Pico W support?	5.2	Bluetooth 5.2
+Pico W	4	What wireless frequency band does the Pico W use?	2.4 GHz	single-band 2.4 GHz
+Pico W	4	Can the Pico W operate in both Bluetooth LE Central and Peripheral roles?	Yes	Bluetooth LE Central and Peripheral roles
+Pico 2 W	4	How much flash does a Pico 2 W have?	4 MB	4 MB of flash memory
+Pico 2 W	4	What is the maximum processor clock speed of the Pico 2 W?	150 MHz	up to 150 MHz
+Pico 2 W	5	How many PIO state machines does the Pico 2 W chip have?	12	12 state machines in total
+Compute Module 4	4	How many high-density connectors are used for the Compute Module 4 electrical interface?	Two	two 100-pin high density connectors
+Compute Module 4	5	What generation is the Compute Module 4 PCIe host interface?	Gen 2	Host, Gen 2
+Compute Module 4	8	What is the maximum USB 2.0 signalling rate for Compute Module 4?	480 Mbps	up to 480Mbps
