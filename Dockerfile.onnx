@@ -8,7 +8,6 @@ COPY scripts/fetch_onnx_models.py scripts/check_model_memory.py ./scripts/
 RUN HF_HOME=/tmp/hf python -m scripts.fetch_onnx_models /models --architecture "$TARGETARCH" \
     && rm -rf /tmp/hf
 COPY app ./app
-COPY web ./web
 ENV ONNX_MODEL_DIR=/models TOKENIZERS_PARALLELISM=false
 EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

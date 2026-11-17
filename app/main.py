@@ -8,7 +8,7 @@ from app.api.routes import router
 
 app = FastAPI(title="Product Knowledge RAG", version="0.1.0")
 app.include_router(router)
-root = Path(__file__).resolve().parent.parent
+root = Path(__file__).resolve().parent
 app.mount("/static", StaticFiles(directory=root / "web" / "static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
